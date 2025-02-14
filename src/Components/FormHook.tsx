@@ -43,6 +43,25 @@ const FormHook = () => {
         />
         {errors.email && <p style={{ color: "red" }}>{errors.email.message}</p>}
       </div>
+      <div>
+        <label htmlFor="password">Password: </label>
+        <input
+          type="text"
+          placeholder="enter password"
+          {...register("password", {
+            minLength: {
+              value: 8,
+              message: "Password must be 8 characters",
+            },
+          })}
+        />
+        {errors.password && (
+          <p style={{ color: "red" }}>{errors.password.message}</p>
+        )}
+      </div>
+      <button disabled={isSubmitting}>
+        {isSubmitting ? "loading..." : "Submit"}
+      </button>
     </form>
   );
 };
