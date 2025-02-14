@@ -71,7 +71,7 @@ const AdvancedForm = () => {
           <input
             type="text"
             id="state"
-            {...register("city", { required: "state name is required" })}
+            {...register("state", { required: "state name is required" })}
           />
           {errors.state && <p>{errors.state.message}</p>}
         </div>
