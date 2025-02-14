@@ -1,9 +1,9 @@
-import FormHook from "./Components/FormHook";
+import AdvancedForm from "./Components/PracticalHook/AdvancedForm";
 
 const App = () => {
   return (
     <div>
-      <FormHook />
+      <AdvancedForm />
     </div>
   );
 };
