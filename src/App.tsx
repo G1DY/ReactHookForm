@@ -1,4 +1,10 @@
+import FormHook from "./Components/FormHook";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <FormHook />
+    </div>
+  );
 };
 export default App;
